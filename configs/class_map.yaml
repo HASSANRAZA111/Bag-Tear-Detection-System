@@ -1,0 +1,43 @@
+
+target_classes: [tear, scratch, stain, stitching, hole, bag]
+
+map:
+  # ---- tear
+  tear: tear
+  tears: tear
+  torn: tear
+  rip: tear
+  rips: tear
+  cut: tear                    # Defect-Clothes (hawadz)
+  leather cut: tear            # leather-defect-detction
+  damage-bag: tear             # 'Damage detection dataset' (real bags)
+  damage: tear                 # bag datasets (Mendeley, 2-BagDamageHandle): tears/rips/punctures
+
+  # ---- scratch
+  scratch: scratch             # scratch-g4gtg (check the images look like bag scratches)
+  scratches: scratch
+  scuff: scratch
+
+  # ---- stain
+  stain: stain                 # Textile-Damage-Identifier, fabric-defect sets, Defect-Clothes
+  stains: stain
+
+  # ---- stitching (loose or broken thread, bad seam)
+  loose thread: stitching      # Textile-Damage-Identifier
+  broken-stitch-detection: stitching   # Broken stitch detection (brack)
+  broken stitch: stitching
+  stitching: stitching
+  # gray stitch: stitching     # fabric-defect-detection (sqc). Uncomment only if you checked it
+  # extra thread: stitching    # fabric_defect_detection (nithimaran). Uncomment if you want it
+
+  # ---- hole
+  hole: hole
+  holes: hole
+  pin hole: hole               # leather-defect-detction
+  puncture: hole
+
+  # ---- bag (the whole bag; used for position and severity)
+  bag: bag
+
+  # Optional "handle" class: add "handle" to target_classes above and uncomment:
+  # handle: handle

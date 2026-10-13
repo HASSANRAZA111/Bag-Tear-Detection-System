@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+data/*
+!data/.gitkeep
+runs/
+results/
+*.zip
+.pytest_cache/
+# Keep your trained model in git so deployment can find it:
+# models/best.pt is NOT ignored on purpose.

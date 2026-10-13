@@ -1,0 +1,11 @@
+# Runtime / deployment (Streamlit Community Cloud, Hugging Face Spaces, local)
+# CPU-only PyTorch (small). If this index is unreachable pip silently falls back to PyPI.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+ultralytics>=8.3.0
+streamlit>=1.65
+pillow>=10.1
+numpy
+# Headless OpenCV avoids "libGL.so.1 not found" errors on servers.
+opencv-python-headless
